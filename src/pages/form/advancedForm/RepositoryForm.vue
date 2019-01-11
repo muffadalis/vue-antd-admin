@@ -3,32 +3,32 @@
     <a-row class="form-row">
       <a-col :lg="6" :md="12" :sm="24">
         <a-form-item
-          label="仓库名"
+          label="Warehouse Name"
           fieldDecoratorId="repository.name"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请输入仓库名称', whitespace: true}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please enter the warehouse name', whitespace: true}]}"
         >
-          <a-input placeholder="请输入仓库名称" />
+          <a-input placeholder="Please enter the warehouse name" />
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 6, offset: 2}" :lg="{span: 8}" :md="{span: 12}" :sm="24">
         <a-form-item
-          label="仓库域名"
+          label="Warehouse Domain Name"
           fieldDecoratorId="repository.domain"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请输入仓库域名', whitespace: true}, {validator: validate}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please enter the warehouse domain name', whitespace: true}, {validator: validate}]}"
         >
-          <a-input addonBefore="http://" addonAfter=".github.io" placeholder="请输入"/>
+          <a-input addonBefore="http://" addonAfter=".github.io" placeholder="Please enter"/>
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 8, offset: 2}" :lg="{span: 10}" :md="{span: 24}" :sm="24">
         <a-form-item
-          label="仓库管理员"
+          label="Warehouse Administrator"
           fieldDecoratorId="repository.manager"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择管理员'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select an administrator'}]}"
         >
-          <a-select placeholder="请选择管理员">
-            <a-select-option value="王同学">王同学</a-select-option>
-            <a-select-option value="李同学">李同学</a-select-option>
-            <a-select-option value="黄同学">黄同学</a-select-option>
+          <a-select placeholder="Please select an administrator">
+            <a-select-option value="Wang classmate">Wang classmate</a-select-option>
+            <a-select-option value="Li classmate">Li classmate</a-select-option>
+            <a-select-option value="Huang Classmate">Huang Classmate</a-select-option>
           </a-select>
         </a-form-item>
       </a-col>
@@ -36,34 +36,34 @@
     <a-row class="form-row">
       <a-col :lg="6" :md="12" :sm="24">
         <a-form-item
-          label="审批人"
+          label="Approving person"
           fieldDecoratorId="repository.auditor"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择审批员'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select an approver'}]}"
         >
-          <a-select placeholder="请选择审批员">
-            <a-select-option value="王晓丽">王晓丽</a-select-option>
-            <a-select-option value="李军">李军</a-select-option>
+          <a-select placeholder="Please select an approver">
+            <a-select-option value="Wang Xiaoli">Wang Xiaoli</a-select-option>
+            <a-select-option value="Li June">Li June</a-select-option>
           </a-select>
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 6, offset: 2}" :lg="{span: 8}" :md="{span: 12}" :sm="24">
         <a-form-item
-          label="生效日期"
+          label="Effective Date"
           fieldDecoratorId="repository.effectiveDate"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择生效日期'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select an effective date'}]}"
         >
           <a-range-picker style="width: 100%" />
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 8, offset: 2}" :lg="{span: 10}" :md="{span: 24}" :sm="24">
         <a-form-item
-          label="仓库类型"
+          label="Warehouse Type"
           fieldDecoratorId="repository.type"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择仓库类型'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select a warehouse type'}]}"
         >
-          <a-select placeholder="请选择仓库类型">
-            <a-select-option value="公开">公开</a-select-option>
-            <a-select-option value="私密">私密</a-select-option>
+          <a-select placeholder="Please select a warehouse type">
+            <a-select-option value="Public">Public</a-select-option>
+            <a-select-option value="Private">Private</a-select-option>
           </a-select>
         </a-form-item>
       </a-col>
@@ -89,7 +89,7 @@ export default {
     },
     validate (rule, value, f) {
       if (value !== undefined && value !== 'iczer') {
-        f('输入\'iczer\'试下？')
+        f('Input\'iczer\'Try it?')
       }
       f()
     }

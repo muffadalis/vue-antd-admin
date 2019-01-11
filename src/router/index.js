@@ -32,13 +32,13 @@ export default new Router({
   routes: [
     {
       path: '/login',
-      name: '登录页',
+      name: 'Login Page',
       component: Login,
       invisible: true
     },
     {
       path: '/',
-      name: '首页',
+      name: 'Home',
       component: MenuView,
       redirect: '/login',
       icon: 'none',
@@ -52,13 +52,13 @@ export default new Router({
           children: [
             {
               path: '/dashboard/workplace',
-              name: '工作台',
+              name: 'Table',
               component: WorkPlace,
               icon: 'none'
             },
             {
               path: '/dashboard/analysis',
-              name: '分析页',
+              name: 'Analysis page',
               component: Dashboard,
               icon: 'none'
             }
@@ -66,25 +66,25 @@ export default new Router({
         },
         {
           path: '/form',
-          name: '表单页',
+          name: 'Form page',
           component: PageView,
           icon: 'form',
           children: [
             {
               path: '/form/basic',
-              name: '基础表单',
+              name: 'Basic forms',
               component: BasicForm,
               icon: 'none'
             },
             {
               path: '/form/step',
-              name: '分步表单',
+              name: 'Step form',
               component: StepForm,
               icon: 'none'
             },
             {
               path: '/form/advanced',
-              name: '高级表单',
+              name: 'Advanced Forms',
               component: AdvancedForm,
               icon: 'none'
             }
@@ -92,49 +92,49 @@ export default new Router({
         },
         {
           path: '/list',
-          name: '列表页',
+          name: 'List page',
           component: PageView,
           icon: 'table',
           children: [
             {
               path: '/list/query',
-              name: '查询表格',
+              name: 'Query form',
               component: QueryList,
               icon: 'none'
             },
             {
               path: '/list/primary',
-              name: '标准列表',
+              name: 'Standard List',
               component: StandardList,
               icon: 'none'
             },
             {
               path: '/list/card',
-              name: '卡片列表',
+              name: 'Card list',
               component: CardList,
               icon: 'none'
             },
             {
               path: '/list/search',
-              name: '搜索列表',
+              name: 'Search list',
               component: SearchLayout,
               icon: 'none',
               children: [
                 {
                   path: '/list/search/article',
-                  name: '文章',
+                  name: 'Article',
                   component: ArticleList,
                   icon: 'none'
                 },
                 {
                   path: '/list/search/application',
-                  name: '应用',
+                  name: 'Application',
                   component: ApplicationList,
                   icon: 'none'
                 },
                 {
                   path: '/list/search/project',
-                  name: '项目',
+                  name: 'Project',
                   component: ProjectList,
                   icon: 'none'
                 }
@@ -144,19 +144,19 @@ export default new Router({
         },
         {
           path: '/detail',
-          name: '详情页',
+          name: 'Details page',
           icon: 'profile',
           component: RouteView,
           children: [
             {
               path: '/detail/basic',
-              name: '基础详情页',
+              name: 'Basic Details page',
               icon: 'none',
               component: BasicDetail
             },
             {
               path: '/detail/advanced',
-              name: '高级详情页',
+              name: 'Advanced Details page',
               icon: 'none',
               component: AdvancedDetail
             }
@@ -164,19 +164,19 @@ export default new Router({
         },
         {
           path: '/result',
-          name: '结果页',
+          name: 'Results page',
           icon: 'check-circle-o',
           component: PageView,
           children: [
             {
               path: '/result/success',
-              name: '成功',
+              name: 'Success',
               icon: 'none',
               component: Success
             },
             {
               path: '/result/error',
-              name: '失败',
+              name: 'Failed',
               icon: 'none',
               component: Error
             }
@@ -184,7 +184,7 @@ export default new Router({
         },
         {
           path: '/exception',
-          name: '异常页',
+          name: 'Exception page',
           icon: 'warning',
           component: RouteView,
           children: [
@@ -211,19 +211,19 @@ export default new Router({
         {
           path: '/pages',
           redirect: '/pages/taskcard',
-          name: '小组件',
+          name: 'Group Parts',
           icon: 'appstore-o',
           component: PageView,
           children: [
             {
               path: '/pages/taskcard',
-              name: '任务卡片',
+              name: 'Task cards',
               icon: 'none',
               component: TaskCard
             },
             {
               path: '/pages/palette',
-              name: '颜色复选框',
+              name: 'Color check box',
               icon: 'none',
               component: ColorBox
             }

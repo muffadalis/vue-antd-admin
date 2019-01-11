@@ -1,40 +1,40 @@
 const operation1 = [
   {
     key: 'op1',
-    type: '订购关系生效',
-    name: '曲丽丽',
+    type: ' Order relationship in effect ',
+    name: 'Qu Lili ',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
     memo: '-'
   },
   {
     key: 'op2',
-    type: '财务复审',
-    name: '付小小',
+    type: ' Financial Review ',
+    name: ' Pay a little ',
     status: 'reject',
     updatedAt: '2017-10-03  19:23:12',
-    memo: '不通过原因'
+    memo: 'Do not pass the reason'
   },
   {
     key: 'op3',
-    type: '部门初审',
-    name: '周毛毛',
+    type: 'Department first Instance',
+    name: 'Zhou Maomau',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
     memo: '-'
   },
   {
     key: 'op4',
-    type: '提交订单',
-    name: '林东东',
+    type: 'Submit an Order',
+    name: 'Lindong',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
-    memo: '很棒'
+    memo: 'Its great.'
   },
   {
     key: 'op5',
-    type: '创建订单',
-    name: '汗牙牙',
+    type: 'Create an Order',
+    name: 'Khan Tooth teeth',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
     memo: '-'
@@ -44,43 +44,43 @@ const operation1 = [
 const operation2 = [
   {
     key: 'op2',
-    type: '财务复审',
-    name: '付小小',
+    type: 'Financial Review',
+    name: 'Pay a little',
     status: 'reject',
     updatedAt: '2017-10-03  19:23:12',
-    memo: '不通过原因'
+    memo: 'Do not pass the reason'
   },
   {
     key: 'op3',
-    type: '部门初审',
-    name: '周毛毛',
+    type: 'Department first Instance',
+    name: ' Zhou Maomau ',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
     memo: '-'
   },
   {
     key: 'op4',
-    type: '提交订单',
-    name: '林东东',
+    type: 'Submit an Order',
+    name: 'Lindong',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
-    memo: '很棒'
+    memo: 'Its great.'
   }
 ]
 
 const operation3 = [
   {
     key: 'op2',
-    type: '财务复审',
-    name: '付小小',
+    type: 'Financial Review',
+    name: 'Pay a little',
     status: 'reject',
     updatedAt: '2017-10-03  19:23:12',
-    memo: '不通过原因'
+    memo: 'Do not pass the reason'
   },
   {
     key: 'op3',
-    type: '部门初审',
-    name: '周毛毛',
+    type: 'Department first Instance',
+    name: 'Zhou Maomau',
     status: 'agree',
     updatedAt: '2017-10-03  19:23:12',
     memo: '-'
@@ -89,27 +89,27 @@ const operation3 = [
 
 const operationColumns = [
   {
-    title: '操作类型',
+    title: 'Type of operation',
     dataIndex: 'type',
     key: 'type'
   },
   {
-    title: '操作人',
+    title: 'operator.',
     dataIndex: 'name',
     key: 'name'
   },
   {
-    title: '执行结果',
+    title: 'Results of implementation',
     dataIndex: 'status',
     key: 'status'
   },
   {
-    title: '操作时间',
+    title: 'Operating time',
     dataIndex: 'updatedAt',
     key: 'updatedAt'
   },
   {
-    title: '备注',
+    title: 'Note',
     dataIndex: 'memo',
     key: 'memo'
   }

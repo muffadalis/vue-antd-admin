@@ -8,17 +8,16 @@ const avatars = [
 ]
 
 const positions = [
-  'JAVA工程师 | 蚂蚁金服-计算服务事业群-微信平台部',
-  '前端工程师 | 蚂蚁金服-计算服务事业群-VUE平台',
-  '前端工程师 | 蚂蚁金服-计算服务事业群-REACT平台',
-  '产品分析师 | 蚂蚁金服-计算服务事业群-IOS平台部'
+  ' Java Engineer | Ant Gold Clothing-computing services business Group-WeChat platform department ',
+  ' Front-end engineer | Ant Gold Clothing-computing services business Group-vue Platform ',
+  ' Front-end engineer | Ant Gold Clothing-computing services business Group-react Platform ',
+  ' Product Analyst | Ant Gold Clothing-computing services business Group-ios Platform Department '
 ]
 
 const sayings = [
-  '那是一种内在的东西，他们到达不了，也无法触及的',
-  '希望是一个好东西，也许是最好的，好东西是不会消亡的',
-  '城镇中有那么多的酒馆，她却偏偏走进了我的酒馆',
-  '那时候我只会想自己想要什么，从不想自己拥有什么'
+  ' Thats an inner thing that they cant reach or touch ',
+  ' Hope is a good thing, maybe the best, and good things dont die ',
+  ' There were so many pubs in the town that she went into my tavern, At that time I would just think about what I wanted and never wanted to have something of my own. '
 ]
 
 const logos = [
@@ -31,36 +30,36 @@ const logos = [
 
 const admins = ['ICZER', 'JACK', 'LUIS', 'DAVID']
 
-const groups = ['高逼格设计天团', '中二少女团', '科学搬砖组', '骗你学计算机', '程序员日常']
+const groups = [' High Force Design Sky Regiment ', ' Middle two Teen Regiment ', ' science move Brick Group ', ' trick you into learning computer ', ' programmer daily ']
 
 const users = [
   {
-    name: '曲丽丽',
+    name: 'Qu Lili',
     avatar: avatars[0],
     groupId: 0
   },
   {
-    name: '付晓晓',
+    name: 'Shaoxiao',
     avatar: avatars[1],
     groupId: 0
   },
   {
-    name: '林东东',
+    name: 'Lindong',
     avatar: avatars[2],
     groupId: 1
   },
   {
-    name: '周星星',
+    name: 'Zhou Xing',
     avatar: avatars[3],
     groupId: 2
   },
   {
-    name: '朱偏右',
+    name: 'Zhu-Right',
     avatar: avatars[4],
     groupId: 3
   },
   {
-    name: '勒个',
+    name: 'Le a',
     avatar: avatars[5],
     groupId: 4
   }

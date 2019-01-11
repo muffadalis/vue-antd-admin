@@ -7,21 +7,21 @@
     <div slot="extra">
       <a-row>
         <a-col :sm="7" :xs="24">
-          <head-info title="项目数" content="56" :bordered="true"/>
+          <head-info title="Number of projects" content="56" :bordered="true"/>
         </a-col>
         <a-col :sm="9" :xs="24">
-          <head-info title="团队内排名" content="8/24" :bordered="true"/>
+          <head-info title="Ranking within the team" content="8/24" :bordered="true"/>
         </a-col>
         <a-col :sm="8" :xs="24">
-          <head-info title="项目访问" content="2,223"/>
+          <head-info title="Project Access" content="2,223"/>
         </a-col>
       </a-row>
     </div>
     <div>
       <a-row style="margin: 0 -12px">
         <a-col style="padding: 0 12px" :xl="16" :lg="24" :md="24" :sm="24" :xs="24">
-          <a-card class="project-list" :loading="loading" style="margin-bottom: 24px;" :bordered="false" title="进行中的项目" :body-style="{padding: 0}">
-            <a slot="extra">全部项目</a>
+          <a-card class="project-list" :loading="loading" style="margin-bottom: 24px;" :bordered="false" title="Projects in the middle of the project" :body-style="{padding: 0}">
+            <a slot="extra">All items</a>
             <div>
               <a-card-grid :key="i" v-for="(item, i) in projects">
                 <a-card :bordered="false" :body-style="{padding: 0}">
@@ -32,43 +32,43 @@
                     </div>
                   </a-card-meta>
                   <div class="project-item">
-                    <a href="/#/">科学搬砖组</a>
-                    <span class="datetime">9小时前</span>
+                    <a href="/#/">Scientific moving Brick Group</a>
+                    <span class="datetime">9 hours ago</span>
                   </div>
                 </a-card>
               </a-card-grid>
             </div>
           </a-card>
-          <a-card :loading="loading" title="动态" :bordered="false">
+          <a-card :loading="loading" title="Dynamic" :bordered="false">
             <a-list>
               <a-list-item :key="index" v-for="(item, index) in activities">
                 <a-list-item-meta>
                   <a-avatar slot="avatar" :src="item.user.avatar" />
                   <div slot="title" v-html="item.template" />
-                  <div slot="description">9小时前</div>
+                  <div slot="description">9 hours ago</div>
                 </a-list-item-meta>
               </a-list-item>
             </a-list>
           </a-card>
         </a-col>
         <a-col style="padding: 0 12px" :xl="8" :lg="24" :md="24" :sm="24" :xs="24">
-          <a-card title="快速开始 / 便捷导航" style="margin-bottom: 24px" :bordered="false" :body-style="{padding: 0}">
+          <a-card title="Get started quickly / Convenient navigation" style="margin-bottom: 24px" :bordered="false" :body-style="{padding: 0}">
             <div class="item-group">
-              <a>操作一</a>
-              <a>操作二</a>
-              <a>操作三</a>
-              <a>操作四</a>
-              <a>操作五</a>
-              <a>操作六</a>
-              <a-button size="small" type="primary" ghost icon="plus">添加</a-button>
+              <a>Operation I</a>
+              <a>Operation II</a>
+              <a>Operation III</a>
+              <a>Operation IV</a>
+              <a>Operation Five</a>
+              <a>Operation Six</a>
+              <a-button size="small" type="primary" ghost icon="plus">Add to</a-button>
             </div>
           </a-card>
-          <a-card title="XX指数" style="margin-bottom: 24px" :bordered="false" :body-style="{padding: 0}">
+          <a-card title="XX index" style="margin-bottom: 24px" :bordered="false" :body-style="{padding: 0}">
             <div style="min-height: 400px;">
               <radar />
             </div>
           </a-card>
-          <a-card :loading="loading" title="团队" :bordered="false">
+          <a-card :loading="loading" title="Team" :bordered="false">
             <div class="members">
               <a-row>
                 <a-col :span="12" v-for="(item, index) in teams" :key="index">

@@ -3,57 +3,57 @@
     <a-card :bordered="false">
       <a-row>
         <a-col :sm="8" :xs="24">
-          <head-info title="我的待办" content="8个任务" :bordered="true"/>
+          <head-info title="I'll do it." content="8 Tasks" :bordered="true"/>
         </a-col>
         <a-col :sm="8" :xs="24">
-          <head-info title="本周任务平均处理时间" content="32分钟" :bordered="true"/>
+          <head-info title="Average task processing time of the week" content="32 minutes" :bordered="true"/>
         </a-col>
         <a-col :sm="8" :xs="24">
-          <head-info title="本周完成任务数" content="24个"/>
+          <head-info title="Number of tasks completed this week" content="24个"/>
         </a-col>
       </a-row>
     </a-card>
     <a-card
       style="margin-top: 24px"
       :bordered="false"
-      title="标准列表"
+      title="Standard List"
     >
       <div slot="extra">
         <a-radio-group>
-          <a-radio-button>全部</a-radio-button>
-          <a-radio-button>进行中</a-radio-button>
-          <a-radio-button>等待中</a-radio-button>
+          <a-radio-button>All</a-radio-button>
+          <a-radio-button>In the middle of the</a-radio-button>
+          <a-radio-button>Waiting in</a-radio-button>
         </a-radio-group>
         <a-input-search style="margin-left: 16px; width: 272px;" />
       </div>
-      <a-button type="dashed" style="width: 100%" icon="plus">添加</a-button>
+      <a-button type="dashed" style="width: 100%" icon="plus">Add to</a-button>
       <a-list size="large" :pagination="{showSizeChanger: true, showQuickJumper: true, pageSize: 5, total: 50}">
         <a-list-item :key="i" v-for="i in 5">
           <a-list-item-meta
-            description="那是一种内在的东西， 他们到达不了，也无法触及的"
+            description="It's an inner thing, They can't reach it, they can't touch it."
           >
             <a-avatar slot="avatar" size="large" shape="square" src="https://gw.alipayobjects.com/zos/rmsportal/WdGqmHpayyMjiEhcKoVE.png"/>
             <a slot="title">Alipay</a>
           </a-list-item-meta>
           <div slot="actions">
-            <a>编辑</a>
+            <a>Edit</a>
           </div>
           <div slot="actions">
             <a-dropdown>
               <a-menu slot="overlay">
-                <a-menu-item><a>编辑</a></a-menu-item>
-                <a-menu-item><a>删除</a></a-menu-item>
+                <a-menu-item><a>Edit</a></a-menu-item>
+                <a-menu-item><a>Delete</a></a-menu-item>
               </a-menu>
-              <a>更多<a-icon type="down"/></a>
+              <a>More<a-icon type="down"/></a>
             </a-dropdown>
           </div>
           <div class="list-content">
             <div class="list-content-item">
               <span>Owner</span>
-              <p>付晓晓</p>
+              <p>Shaoxiao</p>
             </div>
             <div class="list-content-item">
-              <span>开始时间</span>
+              <span>Start time</span>
               <p>2018-07-26 22:44</p>
             </div>
             <div class="list-content-item">

@@ -1,16 +1,16 @@
 <template>
   <div>
-    <a-card class="card" title="仓库管理" :bordered="false">
+    <a-card class="card" title="Warehouse Management" :bordered="false">
       <repository-form ref="repository" :showSubmit="false" />
     </a-card>
-    <a-card class="card" title="任务管理" :bordered="false">
+    <a-card class="card" title="Task management" :bordered="false">
       <task-form ref="task" :showSubmit="false" />
     </a-card>
-    <a-card title="用户管理" :bordered="false">
+    <a-card title="User management" :bordered="false">
       <table-form />
     </a-card>
     <footer-tool-bar>
-      <a-button type="primary" @click="validate" :loading="loading">提交</a-button>
+      <a-button type="primary" @click="validate" :loading="loading">Submit</a-button>
     </footer-tool-bar>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
   components: {FooterToolBar, TableForm, TaskForm, RepositoryForm},
   data () {
     return {
-      desc: '高级表单常见于一次性输入和提交大批量数据的场景。',
+      desc: 'Advanced form found in a large amount of disposable input and submit data.',
       loading: false
     }
   },

@@ -3,31 +3,31 @@
     <a-row class="form-row">
       <a-col :lg="6" :md="12" :sm="24">
         <a-form-item
-          label="任务名"
+          label="Task Name"
           fieldDecoratorId="task.name"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请输入任务名称', whitespace: true}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please enter a task name', whitespace: true}]}"
         >
-          <a-input placeholder="请输入任务名称" />
+          <a-input placeholder="Please enter a task name" />
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 6, offset: 2}" :lg="{span: 8}" :md="{span: 12}" :sm="24">
         <a-form-item
-          label="任务描述"
+          label="Task description"
           fieldDecoratorId="task.description"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请输入任务描述', whitespace: true}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please enter a task description', whitespace: true}]}"
         >
-          <a-input placeholder="请输入任务描述"/>
+          <a-input placeholder="Please enter a task description"/>
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 8, offset: 2}" :lg="{span: 10}" :md="{span: 24}" :sm="24">
         <a-form-item
-          label="执行人"
+          label="Executor."
           fieldDecoratorId="task.executor"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择执行人'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select the executor.'}]}"
         >
-          <a-select placeholder="请选择执行人">
-            <a-select-option value="黄丽丽">黄丽丽</a-select-option>
-            <a-select-option value="李大刀">李大刀</a-select-option>
+          <a-select placeholder="Please select the executor.">
+            <a-select-option value="Huang Lili">Huang Lili</a-select-option>
+            <a-select-option value="Li Dao">Li Dao</a-select-option>
           </a-select>
         </a-form-item>
       </a-col>
@@ -35,34 +35,34 @@
     <a-row class="form-row">
       <a-col :lg="6" :md="12" :sm="24">
         <a-form-item
-          label="责任人"
+          label="Responsible person"
           fieldDecoratorId="task.manager"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择责任人'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select the person responsible'}]}"
         >
-          <a-select placeholder="请选择责任人">
-            <a-select-option value="王伟">王伟</a-select-option>
-            <a-select-option value="李红军">李红军</a-select-option>
+          <a-select placeholder="Please select the person responsible">
+            <a-select-option value="Wang wei">Wang wei</a-select-option>
+            <a-select-option value="Yazida">Yazida</a-select-option>
           </a-select>
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 6, offset: 2}" :lg="{span: 8}" :md="{span: 12}" :sm="24">
         <a-form-item
-          label="提醒时间"
+          label="Reminder Time"
           fieldDecoratorId="task.time"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择提醒时间'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select a reminder time'}]}"
         >
           <a-time-picker style="width: 100%" />
         </a-form-item>
       </a-col>
       <a-col :xl="{span: 8, offset: 2}" :lg="{span: 10}" :md="{span: 24}" :sm="24">
         <a-form-item
-          label="任务类型"
+          label="Task type"
           fieldDecoratorId="task.type"
-          :fieldDecoratorOptions="{rules: [{ required: true, message: '请选择任务类型'}]}"
+          :fieldDecoratorOptions="{rules: [{ required: true, message: 'Please select a task type'}]}"
         >
-          <a-select placeholder="请选择任务类型">
-            <a-select-option value="定时执行">定时执行</a-select-option>
-            <a-select-option value="周期执行">周期执行</a-select-option>
+          <a-select placeholder="Please select a task type">
+            <a-select-option value="Timed execution">Timed execution</a-select-option>
+            <a-select-option value="Cycle execution">Cycle execution</a-select-option>
           </a-select>
         </a-form-item>
       </a-col>

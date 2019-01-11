@@ -11,5 +11,6 @@ const projectArr = Mock.mock({
 }).list
 
 Mock.mock('/project', 'get', () => {
+  console.log('mock get project')
   return projectArr
 })

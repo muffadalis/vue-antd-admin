@@ -3,15 +3,15 @@ import {users, groups} from './index'
 const events = [
   {
     type: 0,
-    event: '八月迭代'
+    event: 'August Iteration'
   },
   {
     type: 1,
-    event: '留言'
+    event: 'Message'
   },
   {
     type: 2,
-    event: '项目进展'
+    event: 'Project Progress'
   }
 ]
 
@@ -24,9 +24,9 @@ const activities = users.map((user, index) => {
 })
 
 const templates = [
-  (user, activity) => { return `${user.name} 在 <a >${user.group}</a> 新建项目 <a>${activity.event}</a>` },
-  (user, activity) => { return `${user.name} 在 <a >${user.group}</a> 发布了 <a>${activity.event}</a>` },
-  (user, activity) => { return `${user.name} 将 <a >${activity.event}</a> 更新至已发布状态` }
+  (user, activity) => { return `${user.name} In <a >${user.group}</a> Create a new project <a>${activity.event}</a>` },
+  (user, activity) => { return `${user.name} In <a >${user.group}</a> released a <a>${activity.event}</a>` },
+  (user, activity) => { return `${user.name} In <a >${activity.event}</a> Update to published status` }
 ]
 
 export {activities, templates}

@@ -19,56 +19,56 @@
       <template slot="operation" slot-scope="text, record, index">
         <template v-if="record.editable">
           <span v-if="record.isNew">
-            <a @click="saveRow(record.key)">添加</a>
+            <a @click="saveRow(record.key)">Add to</a>
             <a-divider type="vertical" />
-            <a-popconfirm title="是否要删除此行？" @confirm="remove(record.key)">
-              <a>删除</a>
+            <a-popconfirm title="Do you want to delete this row?" @confirm="remove(record.key)">
+              <a>Delete</a>
             </a-popconfirm>
           </span>
             <span v-else>
-            <a @click="saveRow(record.key)">保存</a>
+            <a @click="saveRow(record.key)">Save</a>
             <a-divider type="vertical" />
-            <a @click="cancle(record.key)">取消</a>
+            <a @click="cancle(record.key)">Cancel</a>
           </span>
         </template>
         <span v-else>
-          <a @click="toggle(record.key)">编辑</a>
+          <a @click="toggle(record.key)">Edit</a>
           <a-divider type="vertical" />
-          <a-popconfirm title="是否要删除此行？" @confirm="remove(record.key)">
-            <a>删除</a>
+          <a-popconfirm title="Do you want to delete this row?" @confirm="remove(record.key)">
+            <a>Delete</a>
           </a-popconfirm>
         </span>
       </template>
     </a-table>
-    <a-button style="width: 100%; margin-top: 16px; margin-bottom: 8px" type="dashed" icon="plus" @click="newMeber">新增成员</a-button>
+    <a-button style="width: 100%; margin-top: 16px; margin-bottom: 8px" type="dashed" icon="plus" @click="newMeber">New members</a-button>
   </form>
 </template>
 
 <script>
 const columns = [
   {
-    title: '成员姓名',
+    title: 'Name of member',
     dataIndex: 'name',
     key: 'name',
     width: '20%',
     scopedSlots: { customRender: 'name' }
   },
   {
-    title: '工号',
+    title: 'Work No.',
     dataIndex: 'workId',
     key: 'workId',
     width: '20%',
     scopedSlots: { customRender: 'workId' }
   },
   {
-    title: '所属部门',
+    title: 'Affiliated Departments',
     dataIndex: 'department',
     key: 'department',
     width: '40%',
     scopedSlots: { customRender: 'department' }
   },
   {
-    title: '操作',
+    title: 'Operation',
     key: 'action',
     scopedSlots: { customRender: 'operation' }
   }
@@ -77,24 +77,24 @@ const columns = [
 const dataSource = [
   {
     key: '1',
-    name: '小明',
+    name: 'Xiao ming',
     workId: '001',
     editable: false,
-    department: '行政部'
+    department: 'Administration Dept.'
   },
   {
     key: '2',
-    name: '李莉',
+    name: 'Lily',
     workId: '002',
     editable: false,
-    department: 'IT部'
+    department: 'It Dept.'
   },
   {
     key: '3',
-    name: '王小帅',
+    name: 'Wang Xiaoshuai',
     workId: '003',
     editable: false,
-    department: '财务部'
+    department: 'Finance Dept.'
   }
 ]
 

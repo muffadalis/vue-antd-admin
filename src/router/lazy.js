@@ -11,13 +11,13 @@ export default new Router({
   routes: [
     {
       path: '/login',
-      name: '登录页',
+      name: 'Login Page',
       component: Login,
       invisible: true
     },
     {
       path: '/',
-      name: '首页',
+      name: 'Home',
       component: MenuView,
       redirect: '/login',
       icon: 'none',
@@ -31,13 +31,13 @@ export default new Router({
           children: [
             {
               path: '/dashboard/workplace',
-              name: '工作台',
+              name: 'Table',
               component: () => import('@/pages/dashboard/WorkPlace'),
               icon: 'none'
             },
             {
               path: '/dashboard/analysis',
-              name: '分析页',
+              name: 'Analysis page',
               component: () => import('@/pages/dashboard/Analysis'),
               icon: 'none'
             }
@@ -45,25 +45,25 @@ export default new Router({
         },
         {
           path: '/form',
-          name: '表单页',
+          name: 'Form page',
           component: PageView,
           icon: 'form',
           children: [
             {
               path: '/form/basic',
-              name: '基础表单',
+              name: 'Basic forms',
               component: () => import('@/pages/form/BasicForm'),
               icon: 'none'
             },
             {
               path: '/form/step',
-              name: '分步表单',
+              name: 'Step form',
               component: () => import('@/pages/form/stepForm/StepForm'),
               icon: 'none'
             },
             {
               path: '/form/advanced',
-              name: '高级表单',
+              name: 'Advanced Forms',
               component: () => import('@/pages/form/advancedForm/AdvancedForm'),
               icon: 'none'
             }
@@ -71,49 +71,49 @@ export default new Router({
         },
         {
           path: '/list',
-          name: '列表页',
+          name: 'List page',
           component: PageView,
           icon: 'table',
           children: [
             {
               path: '/list/query',
-              name: '查询表格',
+              name: 'Query form',
               component: () => import('@/pages/list/QueryList'),
               icon: 'none'
             },
             {
               path: '/list/primary',
-              name: '标准列表',
+              name: 'Standard List',
               component: () => import('@/pages/list/StandardList'),
               icon: 'none'
             },
             {
               path: '/list/card',
-              name: '卡片列表',
+              name: 'Card list',
               component: () => import('@/pages/list/CardList'),
               icon: 'none'
             },
             {
               path: '/list/search',
-              name: '搜索列表',
+              name: 'Search list',
               component: () => import('@/pages/list/search/SearchLayout'),
               icon: 'none',
               children: [
                 {
                   path: '/list/search/article',
-                  name: '文章',
+                  name: 'Article',
                   component: () => import('@/pages/list/search/ArticleList'),
                   icon: 'none'
                 },
                 {
                   path: '/list/search/application',
-                  name: '应用',
+                  name: 'Application',
                   component: () => import('@/pages/list/search/ApplicationList'),
                   icon: 'none'
                 },
                 {
                   path: '/list/search/project',
-                  name: '项目',
+                  name: 'Project',
                   component: () => import('@/pages/list/search/ProjectList'),
                   icon: 'none'
                 }
@@ -123,19 +123,19 @@ export default new Router({
         },
         {
           path: '/detail',
-          name: '详情页',
+          name: 'Details page',
           icon: 'profile',
           component: RouteView,
           children: [
             {
               path: '/detail/basic',
-              name: '基础详情页',
+              name: 'Basic Details page',
               icon: 'none',
               component: () => import('@/pages/detail/BasicDetail')
             },
             {
               path: '/detail/advanced',
-              name: '高级详情页',
+              name: 'Advanced Details page',
               icon: 'none',
               component: () => import('@/pages/detail/AdvancedDetail')
             }
@@ -143,19 +143,19 @@ export default new Router({
         },
         {
           path: '/result',
-          name: '结果页',
+          name: 'Results page',
           icon: 'check-circle-o',
           component: PageView,
           children: [
             {
               path: '/result/success',
-              name: '成功',
+              name: 'Success',
               icon: 'none',
               component: () => import('@/pages/result/Success')
             },
             {
               path: '/result/error',
-              name: '失败',
+              name: 'Failed',
               icon: 'none',
               component: () => import('@/pages/result/Error')
             }
@@ -163,7 +163,7 @@ export default new Router({
         },
         {
           path: '/exception',
-          name: '异常页',
+          name: 'Exception page',
           icon: 'warning',
           component: RouteView,
           children: [
@@ -190,19 +190,19 @@ export default new Router({
         {
           path: '/components',
           redirect: '/components/taskcard',
-          name: '小组件',
+          name: 'Group Parts',
           icon: 'appstore-o',
           component: PageView,
           children: [
             {
               path: '/components/taskcard',
-              name: '任务卡片',
+              name: 'Task cards',
               icon: 'none',
               component: () => import('@/pages/components/TaskCard')
             },
             {
               path: '/components/palette',
-              name: '颜色复选框',
+              name: 'Color check box',
               icon: 'none',
               component: () => import('@/pages/components/Palette')
             }
