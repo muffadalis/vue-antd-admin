@@ -5,7 +5,7 @@
       ref="input"
       :dataSource="dataSource"
       :class="['search-input', searchMode ? 'enter' : 'leave']"
-      placeholder="站内搜索"
+      placeholder="In-Station search"
       @blur="leaveSearchMode"
     >
     </a-auto-complete>
@@ -17,7 +17,7 @@ export default {
   name: 'HeaderSearch',
   data () {
     return {
-      dataSource: ['选项一', '选项二'],
+      dataSource: ['Option One', 'Option two'],
       searchMode: false
     }
   },

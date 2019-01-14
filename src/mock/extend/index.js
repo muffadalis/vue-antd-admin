@@ -8,12 +8,12 @@ Random.extend({
     return this.pick(admins)
   },
   welcome () {
-    return this.pick(['休息一会儿吧', '准备吃什么呢', '要不要打一把DOTA', '我猜你可能累了'])
+    return this.pick(['Take a break.', 'What are you going to eat?', 'Do you want to hit a dota?', "I'm guessing you're probably tired."])
   },
   timefix () {
     const time = new Date()
     const hour = time.getHours()
-    return hour < 9 ? '早上好' : (hour <= 11 ? '上午好' : (hour <= 13 ? '中午好' : (hour <= 20 ? '下午好' : '晚上好')))
+    return hour < 9 ? 'Good morning' : (hour <= 11 ? 'Good morning.' : (hour <= 13 ? 'Good afternoon.' : (hour <= 20 ? 'Good afternoon' : 'Good evening')))
   },
   avatar () {
     return this.pick(avatars)

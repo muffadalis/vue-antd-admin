@@ -35,7 +35,7 @@ const Group = {
   },
   watch: {
     'values': function (newVal, oldVal) {
-      // 此条件是为解决单选时，触发两次chang事件问题
+      // This condition is a two-time Chang event issue that is triggered when a single selection is resolved
       if (!(newVal.length === 1 && oldVal.length === 1 && newVal[0] === oldVal[0])) {
         this.$emit('change', this.values)
       }

@@ -87,7 +87,7 @@ export default {
   methods: {
     onColorChange (values, colors) {
       if (colors.length > 0) {
-        this.$message.info(`您选择了主题色 ${colors}`)
+        this.$message.info(`You have selected the theme color ${colors}`)
       }
     },
     setTheme (values) {
@@ -100,7 +100,7 @@ export default {
       let clipboard = new Clipboard('#copyBtn')
       const _this = this
       clipboard.on('success', function () {
-        _this.$message.success(`复制成功`)
+        _this.$message.success(`Replication succeeded`)
         clipboard.destroy()
       })
     },

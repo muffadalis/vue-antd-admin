@@ -20,7 +20,7 @@ export default {
 
 <style lang="less">
   :global{
-    //拖拽控件全局样式
+    //Drag and drop control global styles
     .dragable-ghost{
       border: 1px dashed #aaaaaa;
       opacity: 0.65;
@@ -33,7 +33,7 @@ export default {
       border: 1px dashed #aaaaaa;
       opacity: 0.65;
     }
-    //页面切换动画
+    //Page Toggle Animation
     .page-toggle-enter-active{
       transition: all 0.2s ease-in 0.25s;
     }

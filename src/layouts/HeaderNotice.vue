@@ -6,26 +6,26 @@
           <a-tab-pane tab="通知" key="1">
             <a-list>
               <a-list-item>
-                <a-list-item-meta title="你收到了 14 份新周报" description="一年前">
+                <a-list-item-meta title="You got 14 new weekly reports." description="A year ago">
                   <a-avatar style="background-color: white" slot="avatar" src="https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png"/>
                 </a-list-item-meta>
               </a-list-item>
               <a-list-item>
-                <a-list-item-meta title="你推荐的 曲妮妮 已通过第三轮面试" description="一年前">
+                <a-list-item-meta title="The Cinini you recommended has passed the third round of interviews." description="A year ago">
                   <a-avatar style="background-color: white" slot="avatar" src="https://gw.alipayobjects.com/zos/rmsportal/OKJXDXrmkNshAMvwtvhu.png"/>
                 </a-list-item-meta>
               </a-list-item>
               <a-list-item>
-                <a-list-item-meta title="这种模板可以区分多种通知类型" description="一年前">
+                <a-list-item-meta title="This template can distinguish between multiple notification types" description="A year ago">
                   <a-avatar style="background-color: white" slot="avatar" src="https://gw.alipayobjects.com/zos/rmsportal/kISTdvpyTAhtGxpovNWd.png"/>
                 </a-list-item-meta>
               </a-list-item>
             </a-list>
           </a-tab-pane>
-          <a-tab-pane tab="消息" key="2">
+          <a-tab-pane tab="News" key="2">
             123
           </a-tab-pane>
-          <a-tab-pane tab="待办" key="3">
+          <a-tab-pane tab="To be done" key="3">
             123
           </a-tab-pane>
         </a-tabs>

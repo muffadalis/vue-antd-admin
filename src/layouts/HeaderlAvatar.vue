@@ -7,17 +7,17 @@
     <a-menu style="width: 150px" slot="overlay">
       <a-menu-item>
         <a-icon type="user" />
-        <span>个人中心</span>
+        <span>Personal Center</span>
       </a-menu-item>
       <a-menu-item>
         <a-icon type="setting" />
-        <span>设置</span>
+        <span>Set up</span>
       </a-menu-item>
       <a-menu-divider />
       <a-menu-item>
         <router-link to="/login">
           <a-icon type="poweroff" />
-          <span>退出登录</span>
+          <span>Exit Login</span>
         </router-link>
       </a-menu-item>
     </a-menu>
