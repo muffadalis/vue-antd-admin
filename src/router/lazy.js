@@ -24,6 +24,12 @@ export default new Router({
       invisible: true,
       children: [
         {
+          path: '/insurer',
+          name: 'Insurer',
+          component: () => import('@/insurer/list'),
+          icon: 'bank'
+        },
+        {
           path: '/dashboard',
           name: 'dashboard',
           component: RouteView,
