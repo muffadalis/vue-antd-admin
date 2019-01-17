@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import PageView from '@/layouts/PageView'
 import RouteView from '@/layouts/RouteView'
 import MenuView from '@/layouts/MenuView'
 import Login from '@/pages/login/Login'
@@ -31,7 +30,7 @@ export default new Router({
         },
         {
           path: '/dashboard',
-          name: 'dashboard',
+          name: 'Samples',
           component: RouteView,
           icon: 'dashboard',
           children: [
@@ -46,41 +45,7 @@ export default new Router({
               name: 'Analysis page',
               component: () => import('@/pages/dashboard/Analysis'),
               icon: 'none'
-            }
-          ]
-        },
-        {
-          path: '/form',
-          name: 'Form page',
-          component: PageView,
-          icon: 'form',
-          children: [
-            {
-              path: '/form/basic',
-              name: 'Basic forms',
-              component: () => import('@/pages/form/BasicForm'),
-              icon: 'none'
             },
-            {
-              path: '/form/step',
-              name: 'Step form',
-              component: () => import('@/pages/form/stepForm/StepForm'),
-              icon: 'none'
-            },
-            {
-              path: '/form/advanced',
-              name: 'Advanced Forms',
-              component: () => import('@/pages/form/advancedForm/AdvancedForm'),
-              icon: 'none'
-            }
-          ]
-        },
-        {
-          path: '/list',
-          name: 'List page',
-          component: PageView,
-          icon: 'table',
-          children: [
             {
               path: '/list/query',
               name: 'Query form',
@@ -124,93 +89,6 @@ export default new Router({
                   icon: 'none'
                 }
               ]
-            }
-          ]
-        },
-        {
-          path: '/detail',
-          name: 'Details page',
-          icon: 'profile',
-          component: RouteView,
-          children: [
-            {
-              path: '/detail/basic',
-              name: 'Basic Details page',
-              icon: 'none',
-              component: () => import('@/pages/detail/BasicDetail')
-            },
-            {
-              path: '/detail/advanced',
-              name: 'Advanced Details page',
-              icon: 'none',
-              component: () => import('@/pages/detail/AdvancedDetail')
-            }
-          ]
-        },
-        {
-          path: '/result',
-          name: 'Results page',
-          icon: 'check-circle-o',
-          component: PageView,
-          children: [
-            {
-              path: '/result/success',
-              name: 'Success',
-              icon: 'none',
-              component: () => import('@/pages/result/Success')
-            },
-            {
-              path: '/result/error',
-              name: 'Failed',
-              icon: 'none',
-              component: () => import('@/pages/result/Error')
-            }
-          ]
-        },
-        {
-          path: '/exception',
-          name: 'Exception page',
-          icon: 'warning',
-          component: RouteView,
-          children: [
-            {
-              path: '/exception/404',
-              name: '404',
-              icon: 'none',
-              component: () => import('@/pages/exception/404')
-            },
-            {
-              path: '/exception/403',
-              name: '403',
-              icon: 'none',
-              component: () => import('@/pages/exception/403')
-            },
-            {
-              path: '/exception/500',
-              name: '500',
-              icon: 'none',
-              component: () => import('@/pages/exception/500')
-            }
-          ]
-        },
-        {
-          path: '/components',
-          redirect: '/components/taskcard',
-          name: 'Group Parts',
-          icon: 'appstore-o',
-          component: PageView,
-          children: [
-            {
-              path: '/components/taskcard',
-              name: 'Task cards',
-              icon: 'none',
-              component: () => import('@/pages/components/TaskCard')
-            },
-            {
-              path: '/components/palette',
-              name: 'Color check box',
-              icon: 'none',
-              component: () => import('@/pages/components/Palette')
             }
           ]
         }
